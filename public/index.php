@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
-define('MODEL_DIR', BASE_PATH . '/src/models');
+define('MODEL_DIR', BASE_PATH . '/app/models');
 
 try {
     //adding autoloader since factory didn't
