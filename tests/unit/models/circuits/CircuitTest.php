@@ -33,4 +33,10 @@ class CircuitTest extends TestCase
         $this->assertIsArray($arr);
     }
 
+    public function test__test()
+    {
+
+    }
+
+
 }
