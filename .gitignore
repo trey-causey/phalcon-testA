@@ -1,2 +1,9 @@
 vendor/
 vendor
+composer.lock
+/.env
+app/config/config.ini.dev
+cache/volt/*.php
+.idea/
+.phpunit.result.cache
+
