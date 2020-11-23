@@ -18,7 +18,7 @@ class TestTest extends TestCase
     public function testSaveTestItem()
     {
         $testObj = new Test(new DatabasePlain());
-        $testObj->SaveTestItem(null, "testTitle2", "https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg");
+        $testObj->SaveTestItem(null, "testTitle4", "https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg");
 
     }
 }

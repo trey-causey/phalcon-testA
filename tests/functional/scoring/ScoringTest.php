@@ -2,9 +2,9 @@
 
 require __DIR__ . '/../../../app/models/teamOwner/teamOwner.php';
 require __DIR__ . '/../../../app/utils/raceResults.php';
-require __DIR__ . '/../../../app/libs/Receiver.php';
-require __DIR__ . '/../../../app/libs/Invoker.php';
-require __DIR__ . '/../../../app/utils/cacheFunction.php';
+require __DIR__ . '/../../../src/libs/Receiver.php';
+require __DIR__ . '/../../../src/libs/Invoker.php';
+require __DIR__ . '/../../../src/utils/cacheFunction.php';
 require __DIR__ . '/../../../app/models/Draft/Queries/GetDraftList/GetDraftListQuery.php';
 require __DIR__ . '/../../../app/models/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuery.php';
 

@@ -27,7 +27,8 @@ class Test
     {
         $sql = "SELECT * FROM test";
         $param = [];
-        $data = $this->db->query($sql, $fetchStyle = PDO::FETCH_ASSOC, $param);
+        //$data = $this->db->query($sql, $fetchStyle = PDO::FETCH_ASSOC, $param);
+        $data = $this->db->fetchAll($sql, $param);
         return $data;
     }
 

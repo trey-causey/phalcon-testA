@@ -35,7 +35,11 @@ class DatabasePlain extends Database {
 
     public function fetchAll($sql, $params = array())
     {
-        return $this->db->fetchAll($sql, $this->db, $params);
+        $sth = $this->db->prepare($sql);
+        $sth->execute();
+
+       $result = $sth->fetchAll();
+       return $result;
     }
 
 
