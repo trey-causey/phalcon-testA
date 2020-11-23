@@ -1,8 +1,6 @@
 <?php
 
-
 namespace testA\providers;
-
 
 use Phalcon\Di\DiInterface;
 
