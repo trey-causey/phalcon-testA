@@ -6,7 +6,9 @@
     "vlucas/phpdotenv": "^4.0",
     "phpunit/phpunit": "^9.0.0",
     "guzzlehttp/guzzle": "^7.2.0",
-    "fabpot/goutte": "^4.0.0"
+    "fabpot/goutte": "^4.0.0",
+    "ext-pdo": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "phalcon/ide-stubs": "^4.0.0"

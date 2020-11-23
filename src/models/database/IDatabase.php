@@ -13,4 +13,6 @@ interface IDatabase {
      */
     public function query($sql, $fetch_style, $params = array());
 
+    public function fetchAll($sql, $params = array());
+
 }

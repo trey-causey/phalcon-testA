@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
 
-class IndexController extends ControllerBase
+class TestController extends ControllerBase
 {
     public function indexAction()
     {
 
     }
 }
-

@@ -11,7 +11,7 @@ define('MODEL_DIR', BASE_PATH . '/app/models');
 
 try {
     //adding autoloader since factory didn't
-    require_once BASE_PATH . '/vendor/autoload.php';
+    //require_once BASE_PATH . '/vendor/autoload.php';
     /**
      * The FactoryDefault Dependency Injector automatically registers
      * the services that provide a full stack framework.
