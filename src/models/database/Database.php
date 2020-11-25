@@ -1,4 +1,4 @@
-<?php namespace Models\database;
+<?php namespace FormulaFantasy\Database;
 
 require_once __DIR__ . '/IDatabase.php';
 

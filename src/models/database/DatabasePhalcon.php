@@ -1,9 +1,7 @@
-<?php
-
-namespace Models\database;
+<?php namespace FormulaFantasy\Database;
 
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
-require_once __DIR__ . '/../../../src/models/database/Database.php';
+require_once MODEL_DIR . '/database/Database.php';
 
 class DatabasePhalcon extends Database
 {

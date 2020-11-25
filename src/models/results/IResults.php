@@ -1,2 +1,6 @@
-<?php namespace testA\models\results;
+<?php namespace FormulaFantasy\Results;
 
+interface IResults {
+
+    public function getData();
+}

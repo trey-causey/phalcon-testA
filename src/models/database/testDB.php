@@ -1,4 +1,4 @@
-<?php namespace Models\database;
+<?php namespace FormulaFantasy\Database;
 
 include __DIR__ . '/DatabasePlain.php';
 
@@ -6,7 +6,7 @@ use PDO;
 
 class testDB {
     /**
-     * @var \Models\database\IDatabase $db
+     * @var \FormulaFantasy\Database\IDatabase $db
      */
     protected $db;
 

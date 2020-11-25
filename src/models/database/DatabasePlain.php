@@ -1,9 +1,9 @@
-<?php namespace Models\database;
+<?php namespace FormulaFantasy\Database;
 
 use PDO;
 use PDOException;
 
-require_once __DIR__ . '/Database.php';
+require_once MODEL_DIR . '/database/Database.php';
 require_once __DIR__ . '/../../../common/setup/config.inc.php';
 
 class DatabasePlain extends Database {

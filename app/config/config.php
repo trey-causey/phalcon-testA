@@ -19,7 +19,8 @@ return new \Phalcon\Config([
     'application' => [
         'appDir'         => APP_PATH . '/',
         'controllersDir' => APP_PATH . '/controllers/',
-        'modelsDir'      => APP_PATH . '/models/',
+        //'modelsDir'      => APP_PATH . '/models/',
+        'modelsDir'      => MODEL_DIR . '/',
         'migrationsDir'  => APP_PATH . '/migrations/',
         //'viewsDir'       => APP_PATH . '/views/',
         'viewsDir'       => BASE_PATH . '/themes/testA/',
