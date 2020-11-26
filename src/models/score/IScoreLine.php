@@ -1,4 +1,4 @@
-<?php namespace FormulaFantasy\Scoring;
+<?php namespace FormulaFantasy\Score;
 
 require_once MODEL_DIR .'/database/IDatabase.php';
 

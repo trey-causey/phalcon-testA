@@ -1,5 +1,4 @@
-<?php
-namespace testNameSpace\utils\scoring;
+<?php namespace FormulaFantasy\Score;
 
 interface ICommand {
 

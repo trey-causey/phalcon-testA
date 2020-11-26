@@ -1,4 +1,4 @@
-<?php namespace testA\models;
+<?php
 
 use Phalcon\Mvc\Model;
 

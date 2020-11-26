@@ -3,4 +3,5 @@
 interface IResults {
 
     public function getData();
+    public function getResultsById();
 }

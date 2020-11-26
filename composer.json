@@ -15,7 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "TestA\\": "app/"
+      "FormulaFantasy\\App\\": "app/",
+      "FormulaFantasy\\Src\\": "src/"
     }
   }
 }

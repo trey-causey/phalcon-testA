@@ -10,8 +10,6 @@ declare(strict_types=1);
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace testA\providers;
-
 use Phalcon\Di\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\Mvc\View\Engine\Volt as VoltEngine;

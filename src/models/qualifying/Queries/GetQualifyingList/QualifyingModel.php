@@ -1,4 +1,4 @@
-<?php namespace Models\Qualifying\Queries;
+<?php namespace FormulaFantasy\Qualifying;
 
 class QualifyingModel {
     public $qualifyId;

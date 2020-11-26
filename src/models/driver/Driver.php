@@ -1,7 +1,6 @@
-<?php namespace Models\driver;
+<?php namespace FormulaFantasy\Driver;
 
-use Models\database\DatabasePlain;
-use Models\database\IDatabase;
+use FormulaFantasy\Database\IDatabase;
 use PDO;
 
 require_once __DIR__ . '/../database/DatabasePlain.php';

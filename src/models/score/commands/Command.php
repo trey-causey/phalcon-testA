@@ -1,6 +1,4 @@
-<?php
-
-namespace testNameSpace\utils\scoring;
+<?php namespace FormulaFantasy\Score;
 
 abstract class Command {
     function Execute() {

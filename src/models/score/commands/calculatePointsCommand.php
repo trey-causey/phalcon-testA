@@ -1,10 +1,8 @@
-<?php
-namespace testNameSpace\utils\scoring;
+<?php namespace FormulaFantasy\Score;
 
 include __DIR__ . '/Command.php';
 
-use testNameSpace\models\teamOwner\teamOwner;
-use testNameSpace\utils\scoring\Command;
+use FormulaFantasy\TeamOwner\TeamOwner;
 
 class calculatePointsCommand extends Command
 {

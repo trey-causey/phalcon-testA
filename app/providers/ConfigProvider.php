@@ -1,4 +1,4 @@
-<?php namespace testA\providers;
+<?php
 
 use Phalcon\Di\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;

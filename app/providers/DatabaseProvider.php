@@ -1,7 +1,5 @@
 <?php
 
-namespace testA\providers;
-
 use Phalcon\Di\DiInterface;
 
 class DatabaseProvider implements \Phalcon\Di\ServiceProviderInterface

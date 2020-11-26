@@ -1,4 +1,4 @@
-<?php namespace testA\forms;
+<?php
 
 use Phalcon\Forms\Element\Text;
 use Phalcon\Forms\Element\TextArea;

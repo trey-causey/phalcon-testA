@@ -1,4 +1,4 @@
-<?php namespace unit\controllers;
+<?php namespace FormulaFantasy\Tests\Unit;
 
 //require_once __DIR__ . '/../../../vendor/autoload.php';
 

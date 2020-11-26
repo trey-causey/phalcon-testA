@@ -1,4 +1,4 @@
-<?php namespace FormulaFantasy\Scoring;
+<?php namespace FormulaFantasy\Score;
 
 class Score
 {

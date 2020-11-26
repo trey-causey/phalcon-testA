@@ -1,8 +1,6 @@
-<?php
+<?php namespace FormulaFantasy\Tests\Functional;
 
-namespace functional\controllers;
-
-use IndexController;
+//use FormulaFantasy\Controllers\IndexController;
 use PHPUnit\Framework\TestCase;
 use Goutte\Client;
 use Symfony\Component\HttpClient\HttpClient;

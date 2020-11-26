@@ -1,14 +1,14 @@
 <?php namespace unit\models\test;
 
-require_once __DIR__ . '/../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../common/setup/configurationTests.php';
 require_once __DIR__ . '/../../../../src/models/test/Test.php';
-use Models\database\DatabasePlain;
-use Models\test\Test;
+
+use FormulaFantasy\Database\DatabasePlain;
+use FormulaFantasy\Models\Test;
 use PHPUnit\Framework\TestCase;
 
 class TestTest extends TestCase
 {
-
     public function testShowWholeTable()
     {
         $tableObj = new Test(new DatabasePlain());

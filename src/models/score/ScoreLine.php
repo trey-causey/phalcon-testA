@@ -1,9 +1,9 @@
-<?php namespace FormulaFantasy\Scoring;
+<?php namespace FormulaFantasy\Score;
 
 require_once MODEL_DIR . '/database/IDatabase.php';
 
 use FormulaFantasy\Database\IDatabase;
-use FormulaFantasy\Scoring\IScoreLine;
+use FormulaFantasy\Score\IScoreLine;
 
 abstract class ScoreLine implements IScoreLine
 {

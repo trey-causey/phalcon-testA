@@ -1,4 +1,4 @@
-<?php namespace Models\teamOwner;
+<?php namespace FormulaFantasy\TeamOwner;
 
 interface ITeamOwner {
 

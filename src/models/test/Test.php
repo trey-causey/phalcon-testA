@@ -1,7 +1,7 @@
-<?php namespace Models\test;
+<?php namespace FormulaFantasy\Test;
 
-use Models\database\DatabasePlain;
-use Models\database\IDatabase;
+use FormulaFantasy\Database\DatabasePlain;
+use FormulaFantasy\Database\IDatabase;
 use PDO;
 
 require_once __DIR__ . '/../database/DatabasePlain.php';

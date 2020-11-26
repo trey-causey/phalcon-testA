@@ -1,16 +1,18 @@
-<?php namespace functional\scoring;
+<?php namespace FormulaFantasy\Tests\Functional;
 
-require __DIR__ . '/../../../app/models/teamOwner/teamOwner.php';
-require __DIR__ . '/../../../app/utils/raceResults.php';
+require __DIR__ . '/../../../common/setup/configurationTests.php';
+
+include MODEL_DIR . '/teamOwner/TeamOwner.php';
+require __DIR__ . '/../../../src/utils/raceResults.php';
 require __DIR__ . '/../../../src/libs/Receiver.php';
-require __DIR__ . '/../../../src/libs/Invoker.php';
+require MODEL_DIR . '/client/Invoker.php';
 require __DIR__ . '/../../../src/utils/cacheFunction.php';
-require __DIR__ . '/../../../app/models/Draft/Queries/GetDraftList/GetDraftListQuery.php';
-require __DIR__ . '/../../../app/models/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuery.php';
+require MODEL_DIR . '/Draft/Queries/GetDraftList/GetDraftListQuery.php';
+require MODEL_DIR . '/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuery.php';
 
-use testNameSpace\libs\Invoker;
-use testNameSpace\models\Qualifying\Queries\GetQualifyingList\GetQualifyingListQuery;
-use testNameSpace\models\teamOwner\TeamOwner;
+use FormulaFantasy\Client\Invoker;
+use FormulaFantasy\Qualifying\GetQualifyingListQuery;
+use FormulaFantasy\TeamOwner;
 use testNameSpace\utils\scoring\calculatePointsCommand;
 use PHPUnit\Framework\TestCase;
 use testNameSpace\models\Draft\Queries\GetDraftList\GetDraftListQuery;

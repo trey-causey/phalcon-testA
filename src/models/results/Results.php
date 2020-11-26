@@ -4,21 +4,15 @@ use FormulaFantasy\Database\IDatabase;
 
 abstract class Results {
 
-    protected $id;
+
     protected $db;
-    protected $data;
+    //protected $data;
 
-    public function __construct(int $id, IDatabase $db)
+    public function __construct(IDatabase $db)
     {
-        $this->id = $id;
         $this->db = $db;
-        $this->setData();
     }
 
-    protected abstract function setData();
+    //protected abstract function setData();
 
-    public function GetData()
-    {
-
-    }
 }

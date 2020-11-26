@@ -1,4 +1,4 @@
-<?php namespace Models\teamOwner;
+<?php namespace FormulaFantasy\TeamOwner;
 
 use phpDocumentor\Reflection\Types\Array_;
 use phpDocumentor\Reflection\Types\Object_;
