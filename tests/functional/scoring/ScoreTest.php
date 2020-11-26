@@ -13,13 +13,13 @@ require MODEL_DIR . '/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuer
 use FormulaFantasy\Client\Invoker;
 use FormulaFantasy\Qualifying\GetQualifyingListQuery;
 use FormulaFantasy\TeamOwner;
-use testNameSpace\utils\scoring\calculatePointsCommand;
+use FormulaFantasy\Score\calculatePointsCommand;
+use FormulaFantasy\Draft\GetDraftListQuery;
 use PHPUnit\Framework\TestCase;
-use testNameSpace\models\Draft\Queries\GetDraftList\GetDraftListQuery;
 use function testNameSpace\setCachedRaceResults;
 use function testNameSpace\setRaceResultArray;
 
-class ScoringTest extends TestCase
+class ScoringTestOld extends TestCase
 {
     /**
      * @test
@@ -28,15 +28,9 @@ class ScoringTest extends TestCase
      */
     public function testScoring_WithTeamOwnerRoundOne_ReturnPoints($theDriverStuff, $expected)
     {
-        $teamOwnerObject = new TeamOwner();
-        $teamOwnerObject->setDriverArray($theDriverStuff);
-        $completeRaceResults = json_cached_api_results();
-        $raceResultArray = setRaceResultArray($completeRaceResults);
-        $treyRoundOneDraftPicks = $this->getOneDraftItemProvider();
-        $treyRoundOneQualifyingResults = $this->getOneQualifyingItemProvider();
-        $completeArray = [$raceResultArray, $treyRoundOneDraftPicks, $treyRoundOneQualifyingResults];
-        $teamOwnerObject->setPointsBasedOnDriver($completeArray);
-        $this->assertEquals($expected, $teamOwnerObject->points);
+        //set draft pick array
+        //set race results array
+        //set qualifying array
     }
 
     /**
@@ -46,18 +40,8 @@ class ScoringTest extends TestCase
      */
     public function testCommandPattern($theDriverStuff, $expected)
     {
-        $testTeamOwnerObject = new TeamOwner();
-        $testTeamOwnerObject->setDriverArray($theDriverStuff);
-        $exampleButtonPush = new Invoker();
-        $completeRaceResults = json_cached_api_results();
-        $raceResultArray = setRaceResultArray($completeRaceResults);
-        $treyRoundOneDraftPicks = $this->getOneDraftItemProvider();
-        $treyRoundOneQualifyingResults = $this->getOneQualifyingItemProvider();
-        $completeArray = [$raceResultArray, $treyRoundOneDraftPicks, $treyRoundOneQualifyingResults];
-        $exampleButtonPush->setCommandOne(new calculatePointsCommand($testTeamOwnerObject, $completeArray));
-        $exampleButtonPush->run();
-        $this->assertEquals($expected, $testTeamOwnerObject->points);
 
+        $examplePushButton = new Invoker();
     }
 
     public function getOneDraftItemProvider()
@@ -87,6 +71,4 @@ class ScoringTest extends TestCase
         ]
             ;
     }
-
 }
-
