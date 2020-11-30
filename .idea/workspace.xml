@@ -11,40 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29327938-a540-4b97-bb01-a99a42e1bef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/draft/Draft.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/draft/DraftList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/draft/IDraft.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/imports/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/results/qualifying/QualifyingResultsConstructor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/results/qualifying/QualifyingResultsDriver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/BaseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/SandboxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/TestHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/database/DatabasePlainTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/draft/GetDraftListQueryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/results/race/constructors/RaceResultsConstructorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/results/race/drivers/RaceResultsDriverTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TestA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/setup/configurationTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/setup/configurationTests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/client/Invoker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/clients/Invoker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/database/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/database/DatabasePlain.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/database/DatabasePlain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/database/IDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/database/IDatabase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/draft/queries/GetDraftList/DraftListModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/draft/queries/GetDraftList/DraftListModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/IResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/IResults.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/Results.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/Results.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/race/RaceResultsConstructor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/race/RaceResultsConstructor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/race/RaceResultsDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/race/RaceResultsDriver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/score/Score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/score/Score.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional/scoring/ScoringTestOld.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/scoring/ScoringTestOld.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/models/database/DatabasePhalconTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/models/database/DatabasePhalconTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/models/test/TestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/models/test/TestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/models/test/TestTestSecond.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/models/test/TestTestSecond.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +42,7 @@
       <server host="localhost" id="aa6369c9-07d7-4f5d-8aa2-18924d4a42e8" name="localhost" port="8989" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4.12">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phalcon/migrations" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -170,7 +137,7 @@
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/models/draft" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -219,7 +186,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -473,11 +440,12 @@
     </state>
     <state x="2675" y="423" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606566239079" />
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605957166789" />
-    <state x="2381" y="103" key="SettingsEditor" timestamp="1606641759089">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="461" y="104" key="SettingsEditor" timestamp="1606752018004">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2381" y="103" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606641759089" />
     <state x="369" y="82" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605959292970" />
+    <state x="461" y="104" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606752018004" />
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1605885025869">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
