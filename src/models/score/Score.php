@@ -6,4 +6,9 @@ class Score
     private $operator;
     private $id;
     private $data;
+
+    public function __construct()
+    {
+
+    }
 }

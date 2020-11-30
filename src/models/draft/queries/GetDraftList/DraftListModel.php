@@ -2,16 +2,21 @@
 
 class DraftListModel {
 
-    public $draftId;
-    public $Draft;
-    public $Round;
-    public $Race;
-    public $Pick;
-    public $Date;
-    public $Owner;
-    public $Driver1;
-    public $Driver2;
-    public $TurboDriver;
-    public $Constructor;
+    protected $draftId;
+    protected $raceId;
+    protected $ownerId;
+    protected $primaryDriverId;
+    protected $secondaryDriverId;
+    protected $turboDriverId;
+    protected $contructorId;
+    protected $pickOrder;
+
+    //public $Draft;
+    //public $Round;
+    //public $raceId;
+    //public $Date;
+
+
+
 
 }

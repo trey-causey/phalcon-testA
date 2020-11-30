@@ -1,9 +1,10 @@
 <?php namespace FormulaFantasy\Results;
 
+require_once MODEL_DIR . '/results/IResults.php';
+
 use FormulaFantasy\Database\IDatabase;
 
-abstract class Results {
-
+abstract class Results implements IResults {
 
     protected $db;
     //protected $data;

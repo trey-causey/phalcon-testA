@@ -11,7 +11,7 @@ interface IDatabase {
      * @throws \Exception
      * @return mixed
      */
-    public function query($sql, $fetch_style, $params = array());
+    public function query($sql, $params = array());
 
     public function fetchAll($sql, $params = array());
 

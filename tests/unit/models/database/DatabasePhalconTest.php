@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-//namespace FormulaFantasy\Tests\Unit\Models\Database;
+namespace FormulaFantasy\Tests\Unit;
 
-require_once __DIR__ . '/../../../../vendor/autoload.php';
+include __DIR__ . '/../../../../common/setup/configurationTests.php';
 
 use FormulaFantasy\Database\DatabasePhalcon;
 use PHPUnit\Framework\TestCase;

@@ -25,10 +25,10 @@ class DatabasePlain extends Database {
      * @param $params
      * @return mixed
      */
-    public function query($sql, $fetch_style, $params = array())
+    public function query($sql, $params = array())
     {
         $stm = $this->db->prepare($sql);
-        $stm->setFetchMode($fetch_style);
+        $stm->setFetchMode(PDO::FETCH_ASSOC);
         $stm->execute($params);
         return $stm;
     }

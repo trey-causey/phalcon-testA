@@ -3,5 +3,6 @@
 interface IResults {
 
     public function getData();
-    public function getResultsById();
+    public function getId();
+
 }

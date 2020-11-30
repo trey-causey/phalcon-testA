@@ -5,7 +5,7 @@ require __DIR__ . '/../../../common/setup/configurationTests.php';
 include MODEL_DIR . '/teamOwner/TeamOwner.php';
 require __DIR__ . '/../../../src/utils/raceResults.php';
 require __DIR__ . '/../../../src/libs/Receiver.php';
-require MODEL_DIR . '/client/Invoker.php';
+require MODEL_DIR . '/clients/Invoker.php';
 require __DIR__ . '/../../../src/utils/cacheFunction.php';
 require MODEL_DIR . '/Draft/Queries/GetDraftList/GetDraftListQuery.php';
 require MODEL_DIR . '/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuery.php';
@@ -71,4 +71,11 @@ class ScoringTestOld extends TestCase
         ]
             ;
     }
+    public function driverRaceResultsDataProvider()
+    {
+        return [
+
+        ];//end return
+    }
+
 }

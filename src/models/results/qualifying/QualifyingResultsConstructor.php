@@ -4,7 +4,7 @@ use FormulaFantasy\Database\IDatabase;
 
 require_once MODEL_DIR . '/results/Results.php';
 
-class RaceResultsConstructor extends Results
+class QualifyingResultsConstructor extends Results
 {
     /** @var $constructorId */
     protected $constructorId;
@@ -24,7 +24,6 @@ class RaceResultsConstructor extends Results
         $sql = "SELECT * FROM constructorresults WHERE constructorId = ? AND raceId = ?";
         $results = $this->db->fetchAll($sql, $data);
         return $results;
-
     }
 
     public function getId()

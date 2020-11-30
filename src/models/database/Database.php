@@ -7,7 +7,7 @@ abstract class Database implements IDatabase
     /**
      * @inheritDoc
      */
-    public function query($sql, $fetch_style, $params = array())
+    public function query($sql, $params = array())
     {
         // TODO: Implement query() method.
     }
