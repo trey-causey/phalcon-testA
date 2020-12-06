@@ -1,6 +1,6 @@
 <?php namespace FormulaFantasy\Client;
 
-include __DIR__ . '/../../utils/scoring/calculatePointsCommand.php';
+include MODEL_DIR . '/score/commands/calculatePointsCommand.php';
 
 use FormulaFantasy\Utilities\Command;
 
