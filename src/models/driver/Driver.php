@@ -3,54 +3,44 @@
 use FormulaFantasy\Database\IDatabase;
 use PDO;
 
-require_once __DIR__ . '/../database/DatabasePlain.php';
+require_once MODEL_DIR . '/driver/IDriver.php';
+require_once MODEL_DIR . '/database/DatabasePlain.php';
 
-class Driver
+abstract class Driver implements IDriver
 {
-    protected $driverId;
+    /** @var IDatabase $db */
+    protected $db;
+
+    protected $id;
+
+    protected $table;
+
+    protected $data;
+
+    protected $canBeSelectedMoreThanOnce;
 
     /**
-     * @var IDatabase $db;
+     * @param IDatabase $db
+     * @param $table
+     * @param $id
      */
-    protected $db;
-    protected $driverRef;
-    protected $number;
-    protected $code;
-
-    protected $canBeSelectedMoreThanOnce = true;
-
-    public function __construct(IDatabase $db)
+    public function __construct(IDatabase $db, $table, $driverId)
     {
         $this->db = $db;
+        $this->table = $table;
+        $this->id = $driverId;
     }
 
-    public function GetDriverIdByDriverRef($driverRef)
-    {
-        $sql = "SELECT * FROM drivers where driverRef = ?";
-        $param = [$driverRef];
-       $data = $this->db->query($sql, $fetchStyle = PDO::FETCH_ASSOC, $param);
-        $arr = [];
-        foreach ($data as $item)
-        {
-            array_push($arr,$item['driverId']);
-        }
-        $max = intval(max($arr));
-        return $max;
+    abstract function getData();
 
+    public function getId()
+    {
+        return $this->id;
     }
 
-    public function GetDriverIdByCode($code)
+    public function getName()
     {
-        $sql = "SELECT * FROM drivers where code = ?";
-        $param = [$code];
-        $data = $this->db->query($sql, $fetchStyle = PDO::FETCH_ASSOC, $param);
-        $arr = [];
-        foreach ($data as $item)
-        {
-            array_push($arr,$item['driverId']);
-        }
-        $max = intval(max($arr));
-        return $max;
+        return $this->getData()['driverRef'];
     }
 }
 

@@ -1,9 +1,10 @@
-<?php namespace unit\models\drivers;
+<?php namespace FormulaFantasy\Tests\Unit;
 
-require_once __DIR__ . '/../../../../src/Models/driver/Driver.php';
+require_once __DIR__ . '/../../../unit/TestHelper.php';
+require MODEL_DIR . '/driver/MainDriver.php';
 
-use Models\driver\Driver;
-use Models\database\DatabasePlain;
+use FormulaFantasy\Driver\MainDriver;
+use FormulaFantasy\Database\DatabasePlain;
 use PHPUnit\Exception;
 use PHPUnit\Framework\TestCase;
 
@@ -13,9 +14,32 @@ class DriverTest extends TestCase
 
     public function test__construct()
     {
-
-        $this->assertInstanceOf(Driver::class,new Driver(new DatabasePlain()));
+        $this->assertInstanceOf(MainDriver::class,new MainDriver(new DatabasePlain(), 1));
     }
+
+    public function testGetId()
+    {
+        $do = new MainDriver(new DatabasePlain(), 1);
+        $this->assertEquals(1, $do->getId());
+    }
+
+    public function testGetData_withID_returnArray()
+    {
+        $do = new MainDriver(new DatabasePlain(), 1);
+        $data = $do->getData();
+        $this->assertIsArray($data);
+    }
+
+    /**
+     * @test
+     * @dataProvider driverIdForCodeProvider
+     */
+    public function testGetName_withID_returnDriverRef($id, $expected)
+    {
+        $do = new MainDriver(new DatabasePlain(), $id);
+        $this->assertEquals($expected, $do->getName());
+    }
+
     /** @test
      * @dataProvider driverRefForIdProvider
      * @param $driverRef
@@ -23,8 +47,6 @@ class DriverTest extends TestCase
      */
     public function testGetDriverIdByDriverRef($driverRef, $expected)
     {
-        $driverObject = new Driver(new DatabasePlain());
-        $this->assertEquals($expected, $driverObject->GetDriverIdByDriverRef($driverRef));
     }
 
     /** @test
@@ -34,8 +56,14 @@ class DriverTest extends TestCase
      */
     public function testGetDriverIdByCode_withThreeLetterCode_ReturnId($code, $expected)
     {
-        $driverObject = new Driver(new DatabasePlain());
-        $this->assertEquals($expected, $driverObject->GetDriverIdByCode($code));
+    }
+
+    public function driverIdForCodeProvider()
+    {
+        return [
+          [1, 'hamilton'],
+          [3, 'rosberg']
+        ];
     }
 
     public function driverCodeForIdProvider()
