@@ -1,22 +1,22 @@
 <?php namespace FormulaFantasy\Score;
 
-include __DIR__ . '/Command.php';
+include __DIR__ . '/ScoreCommand.php';
 
-use FormulaFantasy\TeamOwner\TeamOwner;
+use FormulaFantasy\Score\Score;
 
-class calculatePointsCommand extends Command
+class calculatePointsCommand extends ScoreCommand
 {
-    private $teamOwnerObject;
+    private $ScoreObject;
     private $completeArray;
 
     /**
      * calculatePointsCommand constructor.
-     * @param TeamOwner $to
+     * @param Score $so
      * @param array $completeArray
      */
-    public function __construct(TeamOwner $to, Array $completeArray)
+    public function __construct(Score $so, Array $completeArray)
     {
-        $this->teamOwnerObject = $to;
+        $this->ScoreObject = $so;
         //$this->raceResults = $raceResults;
         $this->completeArray = $completeArray;
     }
@@ -31,7 +31,8 @@ class calculatePointsCommand extends Command
         //set points based on penalties
         //set points based on fastest lap
         //set points based on constructor finish
-        $this->teamOwnerObject->setPointsBasedOnDriver($this->completeArray);
+        //$this->teamOwnerObject->setPointsBasedOnDriver($this->completeArray);
+        $this->ScoreObject->calculatePointsForDriver($this->completeArray);
         //$this->teamOwnerObject->setPointsBasedOnDriver($this->raceResults);
     }
 

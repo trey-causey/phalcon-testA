@@ -1,5 +1,5 @@
 <?php namespace FormulaFantasy\Score;
 
-interface ICommand {
+interface IScoreCommand {
 
 }

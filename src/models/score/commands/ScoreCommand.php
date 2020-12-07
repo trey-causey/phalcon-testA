@@ -1,6 +1,7 @@
 <?php namespace FormulaFantasy\Score;
 
-abstract class Command {
+abstract class ScoreCommand {
+
     function Execute() {
 
     } //end Execute();

@@ -17,6 +17,8 @@ class Driver
     protected $number;
     protected $code;
 
+    protected $canBeSelectedMoreThanOnce = true;
+
     public function __construct(IDatabase $db)
     {
         $this->db = $db;
