@@ -17,6 +17,9 @@ class Roster
     private $secondaryDriver;
     private $turboDriver;
 
+    /** @var Driver */
+    protected $driverArray = [];
+
     private $teamConstructor;
 
     public function __construct()
@@ -45,6 +48,11 @@ class Roster
         $driver3 = $this->turboDriver->getData();
 
         var_dump($driver1, $driver2, $driver3);
+
+    }
+
+    public function addDriver()
+    {
 
     }
 
