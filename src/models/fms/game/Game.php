@@ -2,5 +2,13 @@
 
 class Game
 {
+    public function findGamesByUser($id)
+    {
 
+    }
+
+    public function createNewGame()
+    {
+
+    }
 }

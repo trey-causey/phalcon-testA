@@ -30,7 +30,9 @@ class DatabasePlain extends Database {
         $stm = $this->db->prepare($sql);
         $stm->setFetchMode(PDO::FETCH_ASSOC);
         $stm->execute($params);
-        return $stm;
+        $ans = $stm->fetch();
+
+        return $ans;
     }
 
     public function fetchAll($sql, $params = array())

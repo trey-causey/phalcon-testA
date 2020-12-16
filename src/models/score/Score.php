@@ -1,9 +1,8 @@
 <?php namespace FormulaFantasy\Score;
 
-require_once MODEL_DIR . './results/race/RaceResultsDriver.php';
+use FormulaFantasy\Database\IDatabase;
 
-use FormulaFantasy\Database\DatabasePlain;
-use FormulaFantasy\Results\RaceResultsDriver;
+require_once __DIR__ . '/PointValue.php';
 
 class Score
 {
@@ -13,9 +12,10 @@ class Score
     private $data;
     private $results;
 
-    public function __construct()
+    public function __construct(IDatabase $db)
     {
         //$this->results = new RaceResultsDriver(new DatabasePlain(), )
+        $this->db = $db;
     }
 
     public function calculatePointsForDriver($array)
@@ -24,5 +24,25 @@ class Score
         var_dump($this->id);
     }
 
+    public function getRaceScore($resultsLine)
+    {
+        $positionOrder = $resultsLine[0]["positionOrder"];
+        $pvObj = new PointValue($this->db);
+        $placePointValue = $pvObj->getPoints($positionOrder);
+        return $placePointValue['pointValue'];
+    }
+
+    public function getQualifyingScore($resultsLine)
+    {
+        $runningTotal = 0;
+        if($resultsLine[0]["q3"] != NULL)
+        {
+            $runningTotal += 10;
+        } elseif ($resultsLine[0]["q2"] != NULL)
+        {
+            $runningTotal += 5;
+        };
+        return $runningTotal;
+    }
 
 }

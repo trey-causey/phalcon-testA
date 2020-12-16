@@ -30,6 +30,13 @@ class RaceResultsDriver extends Results
         return $ans;
     }
 
+    public function getRaceResultLineByDriver()
+    {
+        $data = [$this->id, $this->raceId];
+        $sql = "SELECT * FROM results WHERE driverId = ? AND raceId = ?";
+        return $this->db->fetchAll($sql, $data);
+    }
+
     /**
      * @var $params array
      */

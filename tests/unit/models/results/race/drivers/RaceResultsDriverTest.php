@@ -1,15 +1,24 @@
 <?php namespace FormulaFantasy\Tests\Unit;
 
 require_once __DIR__ . '/../../../../TestHelper.php';
-require_once MODEL_DIR . '/database/DatabasePlain.php';
 
 use FormulaFantasy\Database\DatabasePlain;
-use FormulaFantasy\Results\RaceResultsConstructor;
 use FormulaFantasy\Results\RaceResultsDriver;
 use PHPUnit\Framework\TestCase;
 
 class RaceResultsDriverTest extends TestCase
 {
+    /**
+     * @test
+     */
+    public function TestGetRaceResultLineByDriver_WithDriver_ReturnArray()
+    {
+        $rrdObj = new RaceResultsDriver(new DatabasePlain(), 822, 1031);
+        $results = $rrdObj->getRaceResultLineByDriver();
+        var_dump($results);
+        $this->assertIsArray($results);
+    }
+
     /**
      * @test
      * @dataProvider DriverIdProvider

@@ -15,9 +15,9 @@
     "phalcon/incubator": "^1.3.5"
   },
   "autoload": {
-    "psr-4": {
-      "FormulaFantasy\\App\\": "app/",
-      "FormulaFantasy\\Src\\": "src/"
-    }
+    "classmap": [
+      "./"
+    ]
   }
+
 }

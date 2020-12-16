@@ -2,7 +2,7 @@
 
 require_once MODEL_DIR . '/driver/MainDriver.php';
 
-use FormulaFantasy\Database\DatabasePlain;
+use FormulaFantasy\Database\IDatabase;
 use FormulaFantasy\Driver\Driver;
 use FormulaFantasy\Driver\MainDriver;
 
@@ -22,9 +22,11 @@ class Roster
 
     private $teamConstructor;
 
-    public function __construct()
-    {
+    protected $db;
 
+    public function __construct(IDatabase $db)
+    {
+        $this->db = $db;
     }
 
     /**
@@ -32,11 +34,11 @@ class Roster
      */
     public function setRoster(array $array)
     {
-        $this->primaryDriver = new MainDriver(new DatabasePlain(), $array[0]);
+        $this->primaryDriver = new MainDriver($this->db, $array[0]);
         $this->primaryDriver->getData();
-        $this->secondaryDriver = new MainDriver(new DatabasePlain(), $array[1]);
+        $this->secondaryDriver = new MainDriver($this->db, $array[1]);
         $this->secondaryDriver->getData();
-        $this->turboDriver = new MainDriver(new DatabasePlain(), $array[2]);
+        $this->turboDriver = new MainDriver($this->db, $array[2]);
         $this->turboDriver->getData();
         //$this->teamConstructor = $teamConstructor;
     }
@@ -49,6 +51,17 @@ class Roster
 
         var_dump($driver1, $driver2, $driver3);
 
+    }
+
+    public function GetRosterByOwner($OwnerId, $raceId)
+    {
+        $params = [$OwnerId, $raceId];
+        $sql =  "SELECT * FROM draftpicks where ownerId = ? AND raceId = ?";
+        $ans = $this->db->fetchAll($sql, $params);
+        //array_push($this->driverArray,$ans[0]['primaryDriverId']);
+        //array_push($this->driverArray,$ans[0]['secondaryDriverId']);
+        //array_push($this->driverArray,$ans[0]['turboDriverId']);
+        return $ans[0];
     }
 
     public function addDriver()

@@ -11,6 +11,7 @@ class Invoker {
      */
     private $commandOne;
 
+
     public function setCommandOne(ScoreCommand $cmd) {
         $this->commandOne = $cmd;
     }

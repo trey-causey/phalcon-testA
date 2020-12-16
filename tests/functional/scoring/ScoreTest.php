@@ -13,7 +13,9 @@ require __DIR__ . '/../../../src/utils/cacheFunction.php';
 
 use FormulaFantasy\Client\Invoker;
 use FormulaFantasy\Database\DatabasePlain;
+use FormulaFantasy\Draft\Roster;
 use FormulaFantasy\Qualifying\GetQualifyingListQuery;
+use FormulaFantasy\Results\RaceResultsDriver;
 use FormulaFantasy\Score\Score;
 use FormulaFantasy\Score\calculatePointsCommand;
 use FormulaFantasy\Draft\GetDraftListQuery;
@@ -25,31 +27,67 @@ class ScoreTest extends TestCase
 {
     /**
      * @test
-     * @dataProvider setDriverArrayProvider
-     * @param array $theDriverStuff
      */
-    public function testScoring_WithTeamOwnerRoundOne_ReturnPoints($theDriverStuff, $expected)
+    public function testScoring_WithTreyRoundOne_ReturnSixtyOne()
     {
-        //set draft pick array (roster)
-        //set race results array
-        //set qualifying array
+
     }
 
     /**
      * @test
-     * @dataProvider setDriverArrayProvider
+     * @dataProvider RaceFinishProvider
+     * @param array $theDriverStuff
+     */
+    public function testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints($data, $expected)
+    {
+        $pointTotal = 0;
+        $db = new DatabasePlain();
+        $scoreObj = new Score($db);
+        //set draft pick array (roster)
+        $rosObj = new Roster($db);
+        $rosArray = $rosObj->GetRosterByOwner($data, 1031);
+        //foreach driver in roster,
+        foreach ($rosArray as $item)
+        {
+            // set raceResultLine
+            $line = (new RaceResultsDriver($db, $item, 1031))->getRaceResultLineByDriver();
+            $pointTotal += $scoreObj->getRaceScore($line);
+
+        }
+        //set qualifyingResultLine
+        $this->assertEquals($expected, $pointTotal);
+    }
+
+    /**
+     * @test
+     * @dataProvider RaceFinishProvider
      * @param $theDriverStuff
      */
-    public function testCommandPattern($theDriverStuff, $expected)
+    public function testCommandPattern($data, $expected)
     {
+
         $db = new DatabasePlain();
         $exampleButtonPush = new Invoker();
-        $scoreObj = new Score();
-        //$info = GetDraftListByRound(1);
-        $exampleButtonPush->setCommandOne(new calculatePointsCommand($scoreObj, $theDriverStuff));
+        $scoreObj = new Score($db);
+        $rosObj = new Roster($db);
+        $rosArray = $rosObj->GetRosterByOwner($data, 1031);
+        $calcCommand = new calculatePointsCommand($scoreObj, $rosArray);
+
+        $exampleButtonPush->setCommandOne($calcCommand);
+
         $exampleButtonPush->run();
-        //$this->assertIsArray($theDriverStuff);
+        $this->assertEquals($expected, $calcCommand->ans);
     }
+
+    public function RaceFinishProvider()
+    {
+        return [
+            [3, (11+20)],
+            [6, (31+20)],
+            [1, (4+20)]
+        ];
+    }
+
 
     public function getOneDraftItemProvider()
     {
