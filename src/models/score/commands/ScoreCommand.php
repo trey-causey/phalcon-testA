@@ -6,6 +6,11 @@ abstract class ScoreCommand {
 
     protected $line;
 
+    public function __construct()
+    {
+
+    }
+
     function Execute()
     {
 

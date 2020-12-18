@@ -25,7 +25,7 @@ class calculatePointsCommand extends ScoreCommand
      */
     public function __construct(Score $so, Array $completeArray)
     {
-
+        parent::__construct();
         $this->ScoreObject = $so;
         $this->completeArray = $completeArray;
 
@@ -51,6 +51,7 @@ class calculatePointsCommand extends ScoreCommand
             $qLine = (new QualifyingResultsDriver($this->db, $item, 1031))->getQualifyingResultLineByDriver();
             $standardDriverRunningTotal += $this->ScoreObject->getQualifyingScore($qLine);
             //set points based on grid positions
+
             //set points based on qualifying buckets
             //set points based on penalties
             //set points based on fastest lap
