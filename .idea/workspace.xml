@@ -11,27 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29327938-a540-4b97-bb01-a99a42e1bef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/score/PointValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/clients/teamManager/TeamManagerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/models/results/qualifying/drivers/QualifyingResultsDriverTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/providers/clients/teamManagerProviders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/results/driver/DriverResults.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/functional/draft/DraftManagementTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/models/results/drivers/DriverResultsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/models/roster/RosterTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/setup/configurationTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/setup/configurationTests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/clients/Invoker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/clients/Invoker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/clients/TeamManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/clients/TeamManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/database/DatabasePlain.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/database/DatabasePlain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/draft/Roster.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/draft/Roster.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/fms/game/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/fms/game/Game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/qualifying/QualifyingResultsDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/qualifying/QualifyingResultsDriver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/results/race/RaceResultsDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/race/RaceResultsDriver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/score/Score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/score/Score.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/score/commands/ScoreCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/score/commands/ScoreCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/score/commands/calculatePointsCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/score/commands/calculatePointsCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/driver/MainDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/driver/MainDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/results/IResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/results/IResults.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/models/objects/RosterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/models/objects/RosterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/models/results/race/drivers/RaceResultsDriverTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/models/results/race/drivers/RaceResultsDriverTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +58,7 @@
       <server host="localhost" id="aa6369c9-07d7-4f5d-8aa2-18924d4a42e8" name="localhost" port="8989" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4.12">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phalcon/migrations" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -162,18 +151,11 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/unit/models/results/qualifying/drivers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/unit/models/results" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\My\Phalcon_Projects\phalcon-testA\tests\unit\models\results\race" />
-      <recent name="C:\My\Phalcon_Projects\phalcon-testA\src\models\clients" />
-      <recent name="C:\My\Phalcon_Projects\phalcon-testA\themes\testA" />
-      <recent name="C:\My\Phalcon_Projects\TestA\tests\unit\models\test" />
-      <recent name="C:\My\Phalcon_Projects\TestA\tests\unit\models\database" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\My\Phalcon_Projects\phalcon-testA\src\models\score\commands" />
       <recent name="C:\My\Phalcon_Projects\phalcon-testA\app\views\volt\index" />
@@ -181,39 +163,46 @@
       <recent name="C:\My\Phalcon_Projects\phalcon-testA\app\config" />
       <recent name="C:\My\Phalcon_Projects\phalcon-testA\app" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\My\Phalcon_Projects\phalcon-testA\tests\unit\models\roster" />
+      <recent name="C:\My\Phalcon_Projects\phalcon-testA\tests\unit\models\results\race" />
+      <recent name="C:\My\Phalcon_Projects\phalcon-testA\src\models\clients" />
+      <recent name="C:\My\Phalcon_Projects\phalcon-testA\themes\testA" />
+      <recent name="C:\My\Phalcon_Projects\TestA\tests\unit\models\test" />
+    </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ScoreTest.testCommandPattern">
-    <configuration name="QualifyingResultsDriverTest.TestGetQualifyingResultLineByDriver_WithDriver_ReturnArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="FormulaFantasy\Results\QualifyingResultsDriverTest" file="$PROJECT_DIR$/tests/unit/models/results/qualifying/drivers/QualifyingResultsDriverTest.php" method="TestGetQualifyingResultLineByDriver_WithDriver_ReturnArray" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.DriverResultsTest.TestGetDriverIdsByRace">
+    <configuration name="DriverResultsTest.TestGetDriverIdsByRace" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DriverResultsTest" file="$PROJECT_DIR$/tests/unit/models/results/drivers/DriverResultsTest.php" method="TestGetDriverIdsByRace" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RaceResultsDriverTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="FormulaFantasy\Tests\Unit\RaceResultsDriverTest" file="$PROJECT_DIR$/tests/unit/models/results/race/drivers/RaceResultsDriverTest.php" scope="Class" />
+    <configuration name="DriverScoringTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DriverScoringTest" file="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DriverScoringTest.TestGetDriverScorePartOfCommand_BottasRoundOne_ReturnFortyFive" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DriverScoringTest" file="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" method="TestGetDriverScorePartOfCommand_BottasRoundOne_ReturnFortyFive" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DriverScoringTest.TestGetDriverScore_WithBottasRaceResults_ReturnTwentyFive" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DriverScoringTest" file="$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php" method="TestGetDriverScore_WithBottasRaceResults_ReturnTwentyFive" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ScoreTest.testCommandPattern" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="FormulaFantasy\Tests\Functional\ScoreTest" file="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" method="testCommandPattern" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ScoreTest.testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="FormulaFantasy\Tests\Functional\ScoreTest" file="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" method="testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ScoreTest.testScoring_WithTeamOwnerRoundOne_ReturnPoints" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="FormulaFantasy\Tests\Functional\ScoreTest" file="$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php" method="testScoring_WithTeamOwnerRoundOne_ReturnPoints" scope="Method" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.DriverResultsTest.TestGetDriverIdsByRace" />
+        <item itemvalue="PHPUnit.DriverScoringTest.TestGetDriverScore_WithBottasRaceResults_ReturnTwentyFive" />
+        <item itemvalue="PHPUnit.DriverScoringTest.TestGetDriverScorePartOfCommand_BottasRoundOne_ReturnFortyFive" />
+        <item itemvalue="PHPUnit.DriverScoringTest" />
         <item itemvalue="PHPUnit.ScoreTest.testCommandPattern" />
-        <item itemvalue="PHPUnit.QualifyingResultsDriverTest.TestGetQualifyingResultLineByDriver_WithDriver_ReturnArray" />
-        <item itemvalue="PHPUnit.RaceResultsDriverTest" />
-        <item itemvalue="PHPUnit.ScoreTest.testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints" />
-        <item itemvalue="PHPUnit.ScoreTest.testScoring_WithTeamOwnerRoundOne_ReturnPoints" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -237,6 +226,7 @@
       <workItem from="1607432285434" duration="5803000" />
       <workItem from="1607566068648" duration="601000" />
       <workItem from="1607611444580" duration="8036000" />
+      <workItem from="1608225148416" duration="14888000" />
     </task>
     <task id="LOCAL-00001" summary="initial after composer.json init">
       <created>1605637972313</created>
@@ -284,19 +274,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/tjc_design_classesAndInterfaces" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -318,6 +296,10 @@
     </state>
     <state x="440" y="92" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1605664771309" />
     <state x="550" y="117" key="#CLI_Interpreters/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606099354522" />
+    <state x="647" y="105" key="#DriverScoringTest.TestGetDriverScore_WithBottasRaceResults_ReturnTwentyFive" timestamp="1608226385629">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="647" y="105" key="#DriverScoringTest.TestGetDriverScore_WithBottasRaceResults_ReturnTwentyFive/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226385629" />
     <state x="647" y="105" key="#DriverTest.test__construct" timestamp="1607356750636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -327,12 +309,13 @@
     </state>
     <state x="520" y="236" key="#Notifications/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606144092314" />
     <state x="520" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605665197339" />
-    <state x="2587" y="-473" key="#PHP" timestamp="1608039301990">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state x="667" y="168" key="#PHP" timestamp="1608226540840">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2587" y="-473" key="#PHP/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608039301990" />
     <state x="2587" y="-768" key="#PHP/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607289043658" />
     <state x="2587" y="166" key="#PHP/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606157567914" />
+    <state x="667" y="168" key="#PHP/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226540840" />
     <state x="667" y="168" key="#PHP/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606099359335" />
     <state x="667" y="168" key="#PHP/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607356748763" />
     <state x="2460" y="113" key="#PHP_CodeSniffer" timestamp="1606491581710">
@@ -355,6 +338,18 @@
     <state x="600" y="72" key="#SSH_Configurations/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605798412781" />
     <state x="2670" y="91" key="#SSH_Configurations/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606056344625" />
     <state x="600" y="72" key="#SSH_Configurations/0.0.1536.824@0.0.1536.824" timestamp="1605709024433" />
+    <state x="647" y="121" key="#ScoreTest" timestamp="1608226414777">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="647" y="105" key="#ScoreTest.testCommandPattern" timestamp="1608226542414">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="647" y="105" key="#ScoreTest.testCommandPattern/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226542414" />
+    <state x="647" y="105" key="#ScoreTest.testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints" timestamp="1608226459453">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="647" y="105" key="#ScoreTest.testRaceScoring_WithTeamOwnerRoundOne_ReturnPoints/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226459453" />
+    <state x="647" y="121" key="#ScoreTest/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226414777" />
     <state x="2460" y="174" key="#Test_Frameworks" timestamp="1605870817634">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -373,10 +368,11 @@
     <state x="1464" y="-413" width="2170" height="1081" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608109956639" />
     <state x="-422" y="86" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606596384548" />
     <state x="2012" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606573243782" />
-    <state x="730" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607349038108">
+    <state x="730" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608245281200">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2650" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606493489659" />
+    <state x="730" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608245281200" />
     <state x="730" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607349038108" />
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1607354380885">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -397,6 +393,10 @@
     <state x="2544" y="-428" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608117005939" />
     <state x="2544" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606517450007" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605716745810" />
+    <state x="669" y="207" key="#configurationTests.php" timestamp="1608226203597">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="669" y="207" key="#configurationTests.php/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608226203597" />
     <state x="669" y="207" key="#testDB.php" timestamp="1606099362459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -419,91 +419,100 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2086" y="153" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605885025868" />
-    <state x="2957" y="-223" key="FileChooserDialogImpl" timestamp="1608130502210">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state x="1037" y="420" key="FileChooserDialogImpl" timestamp="1608225291856">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2957" y="-223" key="FileChooserDialogImpl/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608130502210" />
     <state x="2957" y="416" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606646710373" />
     <state x="312" y="180" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608078892223" />
+    <state x="1037" y="420" key="FileChooserDialogImpl/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608225291856" />
     <state x="1037" y="420" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607360760823" />
-    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1608133100327">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1608247600839">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608133100327" />
     <state width="1877" height="362" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607291082340" />
     <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658591268" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608074625363" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608247600839" />
     <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962119" />
     <state width="1860" height="352" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1608133100326">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1608247600838">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608133100326" />
     <state width="1877" height="362" key="GridCell.Tab.0.center/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607291082340" />
     <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658591268" />
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608074625363" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608247600838" />
     <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962118" />
     <state width="1860" height="352" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1608133100326">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1608247600838">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608133100326" />
     <state width="1877" height="362" key="GridCell.Tab.0.left/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607291082340" />
     <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837998" />
     <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658591267" />
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608074625363" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608247600838" />
     <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962118" />
     <state width="1860" height="352" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1608133100327">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1608247600838">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608133100327" />
     <state width="1877" height="362" key="GridCell.Tab.0.right/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607291082340" />
     <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658591268" />
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608074625363" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608247600838" />
     <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962118" />
     <state width="1860" height="352" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="297" key="GridCell.Tab.1.bottom" timestamp="1608132993687">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1608241793957">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608132993687" />
     <state width="1877" height="201" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607290282573" />
     <state width="1493" height="201" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="201" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606574268304" />
     <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608074625364" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608241793957" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962119" />
     <state width="1860" height="352" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="297" key="GridCell.Tab.1.center" timestamp="1608132993687">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1608241793957">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.1.center/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608132993687" />
     <state width="1877" height="201" key="GridCell.Tab.1.center/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607290282573" />
     <state width="1493" height="201" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="201" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606574268304" />
     <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608074625364" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608241793957" />
     <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962119" />
     <state width="1860" height="352" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="297" key="GridCell.Tab.1.left" timestamp="1608132993687">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1608241793957">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.1.left/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608132993687" />
     <state width="1877" height="201" key="GridCell.Tab.1.left/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607290282573" />
     <state width="1493" height="201" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="201" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606574268304" />
     <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608074625364" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608241793957" />
     <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962119" />
     <state width="1860" height="352" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
-    <state width="1877" height="297" key="GridCell.Tab.1.right" timestamp="1608132993687">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1608241793957">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.1.right/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608132993687" />
     <state width="1877" height="201" key="GridCell.Tab.1.right/0.0.1536.824/1920.-934.1920.1040@1920.-934.1920.1040" timestamp="1607290282573" />
     <state width="1493" height="201" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606448837999" />
     <state width="1877" height="201" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606574268304" />
     <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608074625364" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608241793957" />
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1606117962119" />
     <state width="1860" height="352" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607375428060" />
     <state width="1877" height="201" key="GridCell.Tab.2.bottom" timestamp="1606513349995">
@@ -577,12 +586,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1605664756656" />
-    <state x="2524" y="-442" width="819" height="779" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1608130531320">
-      <screen x="1920" y="-639" width="1920" height="1040" />
+    <state x="604" y="199" width="819" height="779" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1608228037349">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2524" y="-442" width="819" height="779" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824/1920.-639.1920.1040@1920.-639.1920.1040" timestamp="1608130531320" />
     <state x="2524" y="197" width="833" height="767" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606642944927" />
     <state x="483" y="156" width="626" height="578" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1605958731427" />
+    <state x="604" y="199" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1920.1050/-1858.0.1858.1080/1982.0.1858.1080@0.0.1920.1050" timestamp="1608228037349" />
     <state x="604" y="199" width="662" height="786" key="com.jetbrains.php.test.PhpNewTestDialog/1920.0.1920.1050/0.0.1920.1050/-1858.0.1858.1080@0.0.1920.1050" timestamp="1607360792024" />
     <state x="2312" y="-502" width="725" height="675" key="find.popup" timestamp="1608106802011">
       <screen x="1920" y="-639" width="1920" height="1040" />
@@ -652,43 +662,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/tests/functional/scoring/DriverScoringTest.php</url>
-          <line>35</line>
+          <line>37</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php</url>
-          <line>52</line>
+          <line>48</line>
           <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/functional/scoring/ScoreTest.php</url>
-          <line>72</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/models/draft/Roster.php</url>
-          <line>59</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/models/score/commands/calculatePointsCommand.php</url>
-          <line>51</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/models/results/qualifying/QualifyingResultsDriver.php</url>
-          <line>27</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/models/results/race/RaceResultsDriver.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/models/score/commands/calculatePointsCommand.php</url>
-          <line>63</line>
-          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

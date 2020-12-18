@@ -18,7 +18,7 @@ Di::reset();
 include __DIR__ . '/config.inc.php';
 
 //implement later, better for setup
-/*$dbConfig = [
+$dbConfig = [
     "adapter" => "Mysql",
     "host" => MARIADB_HOST,
     "username" => MARIADB_USER,
@@ -27,7 +27,7 @@ include __DIR__ . '/config.inc.php';
     "charset" => "utf8",
     "port" => MARIADB_PORT
 ];
-$di->setShared('db', function () use ($dbConfig) {};*/
+$di->setShared('db', function () use ($dbConfig) {});
 //include APP_PATH . '/config/config.php';
 
 Di::setDefault($di);

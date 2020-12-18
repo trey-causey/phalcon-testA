@@ -8,8 +8,6 @@ require __DIR__ . '/../../../src/utils/raceResults.php';
 require __DIR__ . '/../../../src/libs/Receiver.php';
 require MODEL_DIR . '/clients/Invoker.php';
 require __DIR__ . '/../../../src/utils/cacheFunction.php';
-//require MODEL_DIR . '/Draft/Queries/GetDraftList/GetDraftListQuery.php';
-//require MODEL_DIR . '/Qualifying/Queries/GetQualifyingList/GetQualifyingListQuery.php';
 
 use FormulaFantasy\Client\Invoker;
 use FormulaFantasy\Database\DatabasePlain;
@@ -20,17 +18,15 @@ use FormulaFantasy\Score\Score;
 use FormulaFantasy\Score\calculatePointsCommand;
 use FormulaFantasy\Draft\GetDraftListQuery;
 use PHPUnit\Framework\TestCase;
-use function testNameSpace\setCachedRaceResults;
-use function testNameSpace\setRaceResultArray;
 
 class ScoreTest extends TestCase
 {
     /**
      * @test
      */
-    public function testScoring_WithTreyRoundOne_ReturnSixtyOne()
+    public function testFullScoringWithCommand_WithTreyRoundOne_ReturnSixtyOne()
     {
-
+        //make sure all drivers from tested roster with be calculated
     }
 
     /**

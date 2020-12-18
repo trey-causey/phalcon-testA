@@ -6,8 +6,6 @@ use FormulaFantasy\Database\IDatabase;
 
 class MainDriver extends Driver
 {
-
-
     public function __construct(IDatabase $db, $driverId)
     {
         $table = "drivers";
