@@ -9,21 +9,24 @@ class QualifyingResultsDriver extends Results
     /** @var $raceId */
     protected $raceId;
 
-    public function __construct(IDatabase $db, $driverId, $raceId)
+    public function __construct(IDatabase $db, $raceId)
     {
-        $this->id = $driverId;
+        //$this->id = $driverId;
         $this->raceId = $raceId;
         parent::__construct($db);
     }
 
     public function getData()
     {
-
+        $params = [$this->raceId];
+        $sql = "SELECT * from qualifying where raceId = ?";
+        $ans = $this->db->fetchAll($sql, $params);
+        return $ans;
     }
 
-    public function getQualifyingResultLineByDriver()
+    public function getQualifyingResultLineByDriver($driverId)
     {
-        $data = [$this->id, $this->raceId];
+        $data = [$driverId, $this->raceId];
         $sql = "SELECT * FROM qualifying WHERE driverId = ? AND raceId = ?";
         return $this->db->fetchAll($sql, $data);
     }
@@ -34,5 +37,18 @@ class QualifyingResultsDriver extends Results
     public function getId()
     {
         return $this->id;
+    }
+
+    public function getBestQualifyRound($qualifyRecord)
+    {
+        if($qualifyRecord['q3'] != NULL)
+        {
+            return '3';
+        } else if($qualifyRecord['q2'] != NULL)
+        {
+            return '2';
+        } else {
+            return '1';
+        }
     }
 }

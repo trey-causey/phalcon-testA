@@ -13,10 +13,31 @@ class QualifyingResultsDriverTest extends TestCase
      */
     public function TestGetQualifyingResultLineByDriver_WithDriver_ReturnArray()
     {
-        $qrdObj = new QualifyingResultsDriver(new DatabasePlain(), 822, 1031);
-        $results = $qrdObj->getQualifyingResultLineByDriver();
+        $qrdObj = new QualifyingResultsDriver(new DatabasePlain(), 1031);
+        $results = $qrdObj->getQualifyingResultLineByDriver(822);
         var_dump($results);
         $this->assertIsArray($results);
+    }
+
+    /**
+     * @test
+     * @dataProvider RoundProvider
+     */
+    public function TestGetBestQualifyRound_WithDriverId_ReturnOneThroughThree($data, $expected)
+    {
+        $qrdObj = new QualifyingResultsDriver(new DatabasePlain(), 1031);
+        $results = $qrdObj->getQualifyingResultLineByDriver($data);
+        $bestRound = $qrdObj->getBestQualifyRound($results[0]);
+        $this->assertEquals($expected, $bestRound);
+    }
+
+    public function RoundProvider()
+    {
+        return [
+            [830,3],
+            [20,2],
+            [847,1]
+        ];
 
     }
 }

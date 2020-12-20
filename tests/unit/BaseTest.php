@@ -1,4 +1,4 @@
-<?php namespace FormulaFantasy\Tests\Unit;
+<?php namespace FormulaFantasy\UnitTests;
 
 require_once __DIR__ . '/../../tests/unit/TestHelper.php';
 

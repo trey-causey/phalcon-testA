@@ -12,8 +12,8 @@ define('PDO_DSN','mysql:host=127.0.0.1;dbname=sitejsvh_FormulaFantasyDB_test;por
 define('MARIADB_USER','root');
 define('MARIADB_PASSWORD','Passw0rd!');
 define('MARIADB_HOST','127.0.0.1');
-define('MARIADB_NAME','ergast');
+define('MARIADB_NAME','ergast_2020');
 define('MARIADB_PORT','3307');
 
-define('PDO_DSN','mysql:host=127.0.0.1;dbname=ergast;port=3307');
+define('PDO_DSN','mysql:host=127.0.0.1;dbname=ergast_2020;port=3307');
 

@@ -1,9 +1,12 @@
-<?php namespace FormulaFantasy\Results;
+<?php namespace Causey\Reports;
 
 use FormulaFantasy\Database\IDatabase;
 
-class DriverResults extends Results {
+class DriverStandings extends ReportView {
 
+    /**
+     * DriversStandings constructor.
+     */
     public function __construct(IDatabase $db)
     {
         parent::__construct($db);
@@ -11,6 +14,6 @@ class DriverResults extends Results {
 
     public function getData()
     {
-
+        // TODO: Implement getData() method.
     }
 }

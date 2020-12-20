@@ -4,6 +4,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Phalcon\Di;
 use Phalcon\Di\FactoryDefault;
+use FormulaFantasy\Database\DatabasePlain;
 
 define('BASE_PATH', dirname(__DIR__ . '/../../../'));
 define('APP_PATH', BASE_PATH . '/app');
@@ -29,5 +30,7 @@ $dbConfig = [
 ];
 $di->setShared('db', function () use ($dbConfig) {});
 //include APP_PATH . '/config/config.php';
+
+$cdb = new DatabasePlain();
 
 Di::setDefault($di);
