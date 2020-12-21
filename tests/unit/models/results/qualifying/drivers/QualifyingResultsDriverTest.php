@@ -38,6 +38,5 @@ class QualifyingResultsDriverTest extends TestCase
             [20,2],
             [847,1]
         ];
-
     }
 }

@@ -5,7 +5,7 @@ class CalculateDriverPointsCommand extends ScoreCommand
 {
     public function __construct()
     {
-
+        parent::__construct();
     }
 
     public function Execute()

@@ -8,7 +8,9 @@ use PHPUnit\Framework\TestCase;
 
 class PostRaceDriverStatsTest extends TestCase
 {
-
+    //arrange
+    //assert
+    //act
     public function test__construct()
     {
         $db = new DatabasePlain();
@@ -27,10 +29,13 @@ class PostRaceDriverStatsTest extends TestCase
         //var_dump($prdsObj);
     }
 
+    public function test_createStatByConstructor()
+    {}
+
     public function InfoProvider()
     {
         return [
-            [1031],
+            [1031,[1, 1031, 815, 211, 3, -2, 2, 0]],
             []
         ];
     }

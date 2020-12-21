@@ -34,12 +34,12 @@ class PostRaceDriverStats extends Record {
             $qualifyRecord = $qrdObj->getQualifyingResultLineByDriver($driverRaceResults['driverId']);
             $qualyBestRound = $qrdObj->getBestQualifyRound($qualifyRecord[0]);
             $netPositionChange = (($driverRaceResults['grid'])-($driverRaceResults['positionOrder']));
-            $penaltyCode = 1;
+            //$penaltyCode = 1;
             $fastestLapBool = ($driverRaceResults['rank'] == 1) ? 1 : 0;
-            $params = [NULL, $raceId, $driverRaceResults['driverId'],$driverRaceResults['constructorId'], $qualyBestRound, $netPositionChange, $penaltyCode, $fastestLapBool];
+            $params = [NULL, $raceId, $driverRaceResults['driverId'],$driverRaceResults['constructorId'], $qualyBestRound, $netPositionChange, $driverRaceResults['statusId'], $fastestLapBool];
             try {
                 $sql = "INSERT INTO driverstats VALUES( ?, ?, ?, ?, ?, ?, ?, ?)";
-                $db->query($sql, $params);
+                $db->insert($sql, $params);
 
 
             } catch (\Exception $e) {
@@ -54,6 +54,12 @@ class PostRaceDriverStats extends Record {
     public function update($data)
     {
         $currentData = $data;
+    }
+
+    public function createStatByConstructor($constructorId)
+    {
+        //this means should still create records based on driver...
+        //but the index should be constructors, since the drivers could vary
     }
 
 

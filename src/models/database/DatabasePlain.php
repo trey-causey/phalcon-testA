@@ -43,7 +43,8 @@ class DatabasePlain extends Database {
        return $result;
     }
 
-
-
-
+    public function insert($sql, $params = array())
+    {
+        $this->db->prepare($sql)->execute($params);
+    }
 }

@@ -14,5 +14,6 @@ interface IDatabase {
     public function query($sql, $params = array());
 
     public function fetchAll($sql, $params = array());
+    public function insert($sql, $params = array());
 
 }
