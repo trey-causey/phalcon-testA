@@ -20,13 +20,10 @@ class MainDriver extends Driver
         return $ans[0];
     }
 
-    public function createDriver(IDatabase $db, $driverData)
-    {
-        // TODO: Implement createDriver() method.
-    }
-
     public function update($driverData)
     {
         // TODO: Implement update() method.
     }
+
+
 }

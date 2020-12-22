@@ -40,7 +40,7 @@ class Roster
         $this->secondaryDriver->getData();
         $this->turboDriver = new MainDriver($this->db, $array[2]);
         $this->turboDriver->getData();
-        //$this->teamConstructor = $teamConstructor;
+        $this->teamConstructor = getConstructor($this->primaryDriver['driverId']);
     }
 
     public function getRoster()
@@ -62,6 +62,13 @@ class Roster
         //array_push($this->driverArray,$ans[0]['secondaryDriverId']);
         //array_push($this->driverArray,$ans[0]['turboDriverId']);
         return $ans[0];
+    }
+
+    public function getConstructor($id)
+    {
+        $params = [$id];
+        $sql = "select driverId, constructorId from driver_constructors where driverId = ?";
+        return $this->db->query($sql, $params)['constructorId'];
     }
 
     public function addDriver()

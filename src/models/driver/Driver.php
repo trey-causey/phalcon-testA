@@ -42,5 +42,15 @@ abstract class Driver implements IDriver
     {
         return $this->getData()['driverRef'];
     }
+
+    public function createDriver(IDatabase $db, $driverDetails)
+    {
+        //implement creating a new driver
+    }
+
+    public function getScoringDetails()
+    {
+
+    }
 }
 

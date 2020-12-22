@@ -49,8 +49,8 @@ class DriverScoringTest extends TestCase
         $rlObj = new RaceResultsDriver($db, $driver, $race);
         $lineR = $rlObj->getRaceResultLineByDriver();
         //get qualyLine
-        $qlObj = new QualifyingResultsDriver($db, $driver, $race);
-        $lineQ = $qlObj->getQualifyingResultLineByDriver();
+        $qlObj = new QualifyingResultsDriver($db, $race);
+        $lineQ = $qlObj->getQualifyingResultLineByDriver($driver);
 
         //get raceScore
         //

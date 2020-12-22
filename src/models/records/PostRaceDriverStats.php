@@ -27,6 +27,16 @@ class PostRaceDriverStats extends Record {
         $raceData = $rrObj->getData();
 
         $params = [];
+        /*$testParams = [
+            'driverStatId' => NULL,
+            'raceId' =>  $raceId,
+            'driverId' => $driverRaceResults['driverId'],
+            'constructorId' => $driverRaceResults['constructorId'],
+            'topQualifyingRound' => $qualyBestRound,
+            'netChangeInRacePosition' => $netPositionChange,
+            'penaltyCode' => $driverRaceResults['statusId'],
+            'fastestLap' => $fastestLapBool
+        ];*/
 
         $dbWriter = new static($db);
 
@@ -37,7 +47,8 @@ class PostRaceDriverStats extends Record {
             //$penaltyCode = 1;
             $fastestLapBool = ($driverRaceResults['rank'] == 1) ? 1 : 0;
             $params = [NULL, $raceId, $driverRaceResults['driverId'],$driverRaceResults['constructorId'], $qualyBestRound, $netPositionChange, $driverRaceResults['statusId'], $fastestLapBool];
-            try {
+            try
+            {
                 $sql = "INSERT INTO driverstats VALUES( ?, ?, ?, ?, ?, ?, ?, ?)";
                 $db->insert($sql, $params);
 

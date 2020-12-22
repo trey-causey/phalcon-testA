@@ -1,26 +1,18 @@
 <?php namespace FormulaFantasy\Draft;
 
+use FormulaFantasy\Database\DatabasePlain;
 
 abstract class Draft implements IDraft
 {
+    protected $db;
 
-    public function create()
+    /**
+     * Draft constructor.
+     * @param $db
+     */
+    public function __construct($db)
     {
-        // TODO: Implement create() method.
+        $this->db = $db;
     }
 
-/*    public function read()
-    {
-        // TODO: Implement read() method.
-    }*/
-
-    public function update()
-    {
-        // TODO: Implement update() method.
-    }
-
-    public function delete()
-    {
-        // TODO: Implement delete() method.
-    }
 }
